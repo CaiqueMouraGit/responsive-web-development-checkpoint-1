@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
+
+.global-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 255, 255, 0.5);;
+
+    padding-left:15px;
+    padding-right: 15px;
+}
+
+nav img{
+    width: 45px;
+    height: 45px
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 1024px;
+    height: 60px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+li:hover, a:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+
+.demonstracao{
+    background-color: aqua;
+    height: 40px;
+    width: 140px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+header {
+    background-color: azure;
+    padding: 20px;
+}
+
+h1{
+    color: black;
+    margin: 20px;
+}
+
+h2 {
+    color: black;
+    margin: 20px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: azure;
+}
+
+.blue-section{
+    background-color: #00a0fb;
+}
+
+.dark-blue-section{
+    background-color: #0046bf;
+}
+
+.light-blue-section{
+    background-color: #66c5fc;
+}
+
+.descricao-desafio{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.texto-descricao{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-porto-logo{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 260px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+}
+
+.card-porto-logo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-porto-logo img{
+    width: 140px;
+    height: 210px;
+}
