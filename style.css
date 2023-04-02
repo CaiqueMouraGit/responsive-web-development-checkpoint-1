@@ -8,19 +8,16 @@
 }
 
 
-.global-nav{
+header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(240, 255, 255, 0.5);;
+    background-color: rgba(255, 255, 255, 0.95);;
 
     padding-left:15px;
     padding-right: 15px;
-}
-
-nav img{
-    width: 45px;
-    height: 45px
+    position: sticky;
+    top: 0;
 }
 
 nav{
@@ -30,6 +27,11 @@ nav{
     width: 100vw;
     max-width: 1024px;
     height: 60px;
+}
+
+nav img{
+    width: 45px;
+    height: 45px
 }
 
 ul{
@@ -53,7 +55,7 @@ li:hover, a:hover{
 }
 
 .demonstracao{
-    background-color: aqua;
+    background-color: #00a0fb;
     height: 40px;
     width: 140px;
     justify-content: center;
@@ -62,9 +64,21 @@ li:hover, a:hover{
     border-radius: 10px;
 }
 
-header {
+.demonstracao:hover{
+    transition: 0.5s;
+    background-color: #0046bf;
+    color: white;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: azure;
-    padding: 20px;
 }
 
 h1{
@@ -77,14 +91,8 @@ h2 {
     margin: 20px;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: azure;
+b{
+    color: #00a0fb;
 }
 
 .blue-section{
@@ -92,14 +100,14 @@ section{
 }
 
 .dark-blue-section{
-    background-color: #0046bf;
+    background-color: #598be0;
 }
 
 .light-blue-section{
     background-color: #66c5fc;
 }
 
-.descricao-desafio{
+.descricao-problema{
     display: flex;
     flex-direction: row;
     gap: 100px;
@@ -131,4 +139,24 @@ section{
 .card-porto-logo img{
     width: 140px;
     height: 210px;
+}
+
+.list-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    height: 260px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
 }
