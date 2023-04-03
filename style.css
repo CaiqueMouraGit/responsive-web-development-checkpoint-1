@@ -29,6 +29,17 @@ nav{
     height: 60px;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    width: 100vw;
+    height: 20px;
+    background-color: black;
+}
+
 nav img{
     width: 45px;
     height: 45px
@@ -88,7 +99,7 @@ h1{
 
 h2 {
     color: black;
-    margin: 20px;
+    margin: 10px;
 }
 
 b{
@@ -104,7 +115,12 @@ b{
 }
 
 .light-blue-section{
-    background-color: #66c5fc;
+    background-color: black;
+    color: white;
+}
+
+.light-blue-section h2{
+    color: white;
 }
 
 .descricao-problema{
@@ -141,22 +157,90 @@ b{
     height: 210px;
 }
 
-.list-cards{
+.list-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 }
 
-.card{
-    background-color: rgb(255, 255, 255);
-    max-width: 300px;
-    height: 260px;
-    border-radius: 10%;
+.list-content p {
+    max-width: 600px;
+}
+
+.list-content b{
+    color: #0046bf;
+}
+
+.saiba-mais{
+    background-color: #0046bf;
+    height: 40px;
+    width: 140px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.saiba-mais:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.card-planos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: #00a0fb;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+    border-radius: 10%;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
 }
+
+.card-planos img{
+    width: 150px;
+    height: 150px;
+}
+
+.card-planos:hover{
+    transform: scale(1.05);
+}
+#dark{
+    background-color: #0046bf;
+}
+
+.card-contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+    border-radius: 10%;
+    padding: 10px;
+    width: 200px;
+    height: 220px;
+    gap: 5px;
+}
+.card-contatos img{
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+}
+
+.card-contatos:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+
+
+
