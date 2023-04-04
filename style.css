@@ -106,13 +106,6 @@ b{
     color: #00a0fb;
 }
 
-.blue-section{
-    background-color: #00a0fb;
-}
-
-.dark-blue-section{
-    background-color: #598be0;
-}
 
 .dark-section{
     background-color: black;
@@ -123,11 +116,6 @@ b{
     color: white;
 }
 
-.descricao-problema{
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-}
 
 .texto-descricao{
     max-width: 400px;
