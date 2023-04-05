@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding:0;
@@ -5,28 +7,39 @@
     font-family: 'Montserrat', 'Raleway', sans-serif;
 }
 
-body{
+body {
     background-color: azure;
 }
 
-header{
+nav {
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
 }
-header a {
+
+nav a {
     transform: rotate(180deg);
     font-size: 3rem;
     color: black;
     text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 4px;
 }
 
-header a:hover {
+nav a:hover {
     transform: scale(1.1) rotate(180deg);
     transition: 0.5s;
     color: #00a0fb;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 main{
     display: flex;
@@ -36,9 +49,23 @@ main{
     text-align: justify;
 }
 
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+
 p{
     max-width: 800px;
     margin-bottom: 30px;
+}
+
+img{
+    width: 550px;
+    height: 300px;
 }
 
 footer{
